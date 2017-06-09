@@ -5,6 +5,7 @@ import { HttpModule, JsonpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { HeroListComponent } from './hero-list/hero-list.component';
+import { HeroListPromiseComponent } from './hero-list/hero-list.component.promise';
 
 import { HeroData } from './hero-data';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
@@ -12,7 +13,8 @@ import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 @NgModule({
   declarations: [
     AppComponent,
-    HeroListComponent
+    HeroListComponent,
+    HeroListPromiseComponent
   ],
   imports: [
     BrowserModule,
