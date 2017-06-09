@@ -4,8 +4,11 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule, JsonpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+
 import { HeroListComponent } from './hero-list/hero-list.component';
 import { HeroListPromiseComponent } from './hero-list/hero-list.component.promise';
+
+import { WikiComponent } from './wiki/wiki.component';
 
 import { HeroData } from './hero-data';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
@@ -14,7 +17,8 @@ import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
   declarations: [
     AppComponent,
     HeroListComponent,
-    HeroListPromiseComponent
+    HeroListPromiseComponent,
+    WikiComponent
   ],
   imports: [
     BrowserModule,
