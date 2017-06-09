@@ -26,7 +26,7 @@ export class HeroListComponent implements OnInit {
                                   error => this.errorMessage = <any>error);
   }
 
-  addHero(name: string) {
+  createHero(name: string) {
     if (!name) { return; }
     this.heroService.create(name).subscribe(
                                   hero => this.heroes.push(hero),
