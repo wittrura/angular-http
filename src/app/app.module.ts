@@ -9,6 +9,7 @@ import { HeroListComponent } from './hero-list/hero-list.component';
 import { HeroListPromiseComponent } from './hero-list/hero-list.component.promise';
 
 import { WikiComponent } from './wiki/wiki.component';
+import { WikiSmartComponent } from './wiki/wiki-smart.component';
 
 import { HeroData } from './hero-data';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
@@ -18,7 +19,8 @@ import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
     AppComponent,
     HeroListComponent,
     HeroListPromiseComponent,
-    WikiComponent
+    WikiComponent,
+    WikiSmartComponent
   ],
   imports: [
     BrowserModule,
