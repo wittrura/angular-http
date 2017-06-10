@@ -13,6 +13,8 @@ import { WikiSmartComponent } from './wiki/wiki-smart.component';
 
 import { HeroData } from './hero-data';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { requestOptionsProvider } from './default-request-options.service';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +31,7 @@ import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
     JsonpModule,
     InMemoryWebApiModule.forRoot(HeroData)
   ],
-  providers: [],
+  providers: [ requestOptionsProvider ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
